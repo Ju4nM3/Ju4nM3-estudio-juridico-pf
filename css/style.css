@@ -61,6 +61,10 @@ body {
     display: none;
   }
 
+  .sub {
+    display: none;
+  }
+
   .header__nav {
     width: 100%;
     display: flex;
@@ -78,8 +82,8 @@ body {
     outline: none;
     border: none;
     z-index: 10000;
-    top: 0px;
-    right: 0px;
+    top: 1%;
+    right: 1%;
   }
   .header__nav-toggle .bar,
   .header__nav-toggle:after,
@@ -88,7 +92,7 @@ body {
     display: block;
     width: 100%;
     height: 5px;
-    background-color: #fff;
+    background-color: #000;
     margin: 6px 0px;
     transition: 0.4s;
   }
@@ -122,6 +126,7 @@ body {
     right: 100%;
     top: 0;
     width: 100%;
+    height: 100vh;
     z-index: 9000;
     background: rgb(65, 16, 16);
     transition: 0.69s;
@@ -794,11 +799,47 @@ body {
     margin-right: 10%;
     gap: 30px;
   }
+
+  .header__navDesktop li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
   .header__navDesktop a {
     color: #fff;
     font-weight: 600;
     font-size: 0.8rem;
     text-transform: uppercase;
+  }
+
+  .sub {
+    display: initial;
+    height: 20px;
+    width: 3px;
+    background: #fff;
+    opacity: 0;
+    transition: 0.25s;
+  }
+
+  .header__navDesktop li:first-child:hover > .sub {
+    opacity: 1;
+  }
+
+  .header__navDesktop li:nth-child(2):hover > .sub {
+    opacity: 1;
+  }
+
+  .header__navDesktop li:nth-child(3):hover > .sub {
+    opacity: 1;
+  }
+
+  .header__navDesktop li:nth-child(4):hover > .sub {
+    opacity: 1;
+  }
+
+  .header__navDesktop li:last-child:hover > .sub {
+    opacity: 1;
   }
 
   .header__navImg {
@@ -893,18 +934,18 @@ body {
     display: none;
   }
 
-  .hero__ss img {
-    display: block;
-    width: 620px;
-    box-shadow: 0px 0px 10px #000, 0px 0px 5px #000;
-  }
-
   .hero__ss {
     height: 89vh;
-    margin-top: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .hero__ss img {
+    display: block;
+    width: 50%;
+    box-shadow: 0px 0px 10px #000, 0px 0px 5px #000;
   }
 
   .hero__ss-article {
@@ -974,7 +1015,123 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 1200px;
+    margin: 0 10%;
+  }
+
+  .hero__contract {
+    transform: translateX(-128%);
+    opacity: 0;
+    animation-name: proslidercontract;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+  }
+  .hero__adm {
+    transform: translateX(0%);
+    opacity: 0;
+    animation-name: proslideradm;
+    animation-duration: 2s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+  }
+  .hero__family {
+    transform: translateX(0%);
+    opacity: 0;
+    animation-name: prosliderfamily;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  .hero__labor {
+    transform: translateX(0%);
+    opacity: 0;
+    animation-name: prosliderlabor;
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+  }
+  .hero__criminal {
+    transform: translateX(0%);
+    opacity: 0;
+    animation-name: proslidercriminal;
+    animation-duration: 2s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+  }
+  .hero__tax {
+    transform: translateX(0%);
+    opacity: 0;
+    animation-name: proslidertax;
+    animation-duration: 2s;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes proslidercontract {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes proslideradm {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes prosliderfamily {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes prosliderlabor {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes proslidercriminal {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes proslidertax {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
   }
 
   .hero__areas img {

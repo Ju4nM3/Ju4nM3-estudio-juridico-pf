@@ -940,6 +940,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+  }
+
+  .hero__ss-article-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 5%;
+    width: 100%;
   }
 
   .hero__ss img {
@@ -949,7 +960,6 @@ body {
   }
 
   .hero__ss-article {
-    width: 700px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

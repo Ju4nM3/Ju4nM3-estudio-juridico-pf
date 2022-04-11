@@ -1,0 +1,1059 @@
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BODY */
+
+body {
+  background: #777;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 120px 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* DISEÑO 280PX */
+
+@media (min-width: 280px) {
+  header {
+    grid-area: header;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 9000;
+    background: #777;
+    border-bottom: 2px solid #000;
+    box-shadow: 0px 0px 10px #000;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  /* HEADER */
+
+  .header__navDesktop {
+    display: none;
+  }
+
+  .header__navImg {
+    display: none;
+  }
+
+  .header__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* MENÚ HAMBURGESA */
+
+  .header__nav-toggle {
+    position: absolute;
+    width: 35px;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 10000;
+    top: 0px;
+    right: 0px;
+  }
+  .header__nav-toggle .bar,
+  .header__nav-toggle:after,
+  .header__nav-toggle:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .header__nav-toggle.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  .header__nav-toggle.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .header__nav-toggle.is-active .bar {
+    opacity: 0;
+  }
+
+  /* LOGO */
+
+  .header__navImg-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__navImg-mobile img {
+    width: 35%;
+  }
+
+  /* MENÚ DESLIZABLE */
+
+  .header__navBar {
+    position: fixed;
+    right: 100%;
+    top: 0;
+    width: 100%;
+    z-index: 9000;
+    background: rgb(65, 16, 16);
+    transition: 0.69s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .header__navBar.is-active {
+    right: 0;
+    z-index: 9000;
+    height: 100%;
+  }
+
+  .header__navBarImg img {
+    width: 10rem;
+    margin-top: 35px;
+  }
+
+  .header__mobile-navBar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .header__navBar a {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.88rem;
+  }
+
+  /* LOGO WHATSAPP */
+
+  .fa-whatsapp {
+    color: rgb(40, 136, 37);
+    font-size: 2.5rem;
+    position: fixed;
+    z-index: 10000;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  /* MAIN */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* MAIN FS */
+
+  .hero__fsContainer {
+    display: none;
+  }
+
+  .hero__fs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero__fsLogo-mobile {
+    box-shadow: 0px 0px 10px #000, 0px 0px 5px #000, 0px 0px 5px #000;
+    width: 100%;
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/imagenes/caba-1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero__fsLogo-mobile img {
+    width: 14rem;
+  }
+
+  /* SECTION DIVIDER */
+
+  .hero__sectionDivider {
+    width: 80%;
+    height: 2px;
+    background: #000;
+    border-radius: 35%;
+    margin-top: 50px;
+  }
+
+  /* MAIN SS */
+
+  .hero__ss img {
+    display: none;
+  }
+
+  .hero__ss-article {
+    display: none;
+  }
+
+  .hero__ss {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero__ssTitleMobile {
+    box-shadow: 0px 0px 10px #000, 0px 0px 5px #000;
+    min-width: 90;
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/imagenes/quienes-somos.jpg);
+    background-size: cover;
+  }
+
+  .hero__ssTitleMobile-spanContainer {
+    background: rgb(0, 0, 0, 0.7);
+    width: 13.5rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+  }
+
+  .hero__ssTitleMobile-spanContainer span {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: "Lyon", Georgia;
+  }
+
+  .hero__ss p {
+    width: 90%;
+    text-align: center;
+    font-family: "Lyon", Georgia;
+    line-height: 1.5rem;
+  }
+
+  .hero__ssMobile-spanP {
+    font-weight: 600;
+  }
+
+  .hero__ssMobile-spanDesktop {
+    display: none;
+  }
+
+  /*MAIN PROFESIONALES*/
+
+  .hero__lawyers {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__lawyers span {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .hero__cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .hero__cards {
+    position: relative;
+    width: 70%;
+    height: 400px;
+  }
+
+  .hero__cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #000;
+    opacity: 0.8;
+  }
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+
+    width: 100%;
+    height: 135px;
+    background: rgb(0, 0, 0, 0.8);
+    bottom: 0;
+  }
+
+  .hero__text span {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  .hero__text span:first-child {
+    font-weight: 600;
+    margin-top: 10px;
+    text-decoration: underline;
+  }
+
+  /*MAIN AREAS*/
+
+  .hero__areas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__box {
+    display: none;
+  }
+
+  .slider {
+    width: 100;
+    overflow: hidden;
+  }
+
+  .slider ul {
+    display: flex;
+    width: 600%;
+
+    animation: slider 30s infinite;
+    animation-direction: alternate;
+  }
+
+  .slider li {
+    border-bottom: 2px solid #000;
+    display: flex;
+    width: 100%;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  @keyframes slider {
+    0% {
+      margin-left: 0;
+    }
+    15% {
+      margin-left: 0;
+    }
+
+    17% {
+      margin-left: -100%;
+    }
+    32% {
+      margin-left: -100%;
+    }
+
+    34% {
+      margin-left: -200%;
+    }
+    49% {
+      margin-left: -200%;
+    }
+
+    51% {
+      margin-left: -300%;
+    }
+    66% {
+      margin-left: -300%;
+    }
+
+    68% {
+      margin-left: -400%;
+    }
+    83% {
+      margin-left: -400%;
+    }
+
+    85% {
+      margin-left: -500%;
+    }
+    100% {
+      margin-left: -500%;
+    }
+  }
+
+  /*MAIN CARRERA*/
+
+  .hero__textContainer {
+    display: none;
+  }
+
+  .hero__career {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__career span:first-child {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .hero__career span:nth-child(2) {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .hero__career-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__career-form span {
+    font-weight: 500 !important;
+    font-size: 0.8rem !important;
+    align-self: flex-end;
+  }
+
+  .form__careerInput {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form__careerInput input {
+    width: 100%;
+    background: transparent;
+    border: none;
+  }
+
+  .form__careerInput input:focus {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .form__careerInput input::placeholder {
+    color: #000;
+  }
+
+  .form__underline {
+    height: 2px;
+    background: #000;
+    border-radius: 20%;
+  }
+
+  .form__careerInput-btn {
+    width: 30%;
+    background: #fff;
+    border: none;
+  }
+
+  /*MAIN CONTACTO*/
+
+  .hero__contact {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__contact span:first-child {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .hero__contact-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__contactInput {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form__contactInput input {
+    width: 100%;
+    background: transparent;
+    border: none;
+  }
+
+  .form__contactInput input:focus {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .form__contactInput input::placeholder {
+    color: #000;
+  }
+
+  .contactSelect {
+    width: 100%;
+    margin-bottom: 20px;
+    background: transparent;
+    border-bottom: 2px solid #000;
+  }
+
+  .form__contactInput option {
+    border: none;
+    border-radius: 4px;
+  }
+
+  .form__underline {
+    height: 2px;
+    background: #000;
+    border-radius: 20%;
+  }
+
+  .form__contactTArea {
+    width: 100%;
+    background: transparent;
+    border-radius: 4px;
+    resize: none;
+  }
+
+  .form__contactTArea:focus {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 4px;
+  }
+
+  .form__contactTArea::placeholder {
+    color: #000;
+  }
+
+  .form__contactInput-btn {
+    width: 30%;
+  }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 50px;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 0px 10px #111, 0px 0px 10px #111;
+  }
+
+  .footer img {
+    margin-top: 20px;
+    width: 12rem;
+  }
+
+  .footer span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer p {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+
+  .footer__divider {
+    width: 60vw;
+    height: 2px;
+    background: #000;
+    border-radius: 35%;
+  }
+
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .footer__socialMedia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__socialMedia-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__socialMedia-icons a {
+    font-size: 1.2rem;
+    color: #ccc;
+    padding: 0px 15px;
+  }
+
+  .footer__socialMedia-icons i {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 100%;
+  }
+
+  .footer__location {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .footer__location p {
+    text-align: center;
+  }
+
+  .footer__copyContainer {
+    width: 100%;
+    height: 100px;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .footer__copyContainer span {
+    width: 200px;
+  }
+}
+
+/* DISEÑO 768PX */
+
+@media (min-width: 768px) {
+  /* MENÚ DESLIZABLE */
+
+  .header__navBar {
+    position: fixed;
+    right: 100%;
+    top: 0;
+    width: 35%;
+    min-height: 100vh;
+    z-index: 9000;
+    background: rgb(65, 16, 16);
+    transition: 0.69s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+  }
+
+  .header__navBar.is-active {
+    right: 65%;
+    z-index: 9000;
+  }
+
+  .header__navBarImg img {
+    width: 10rem;
+    margin-top: 45px;
+  }
+
+  .header__mobile-navBar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .header__navBar a {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+
+  /* MAIN SECOND SECTION */
+
+  .hero__ssMobile-spanDesktop {
+    display: initial;
+    text-align: center;
+    font-family: "Lyon", Georgia;
+    line-height: 1.5rem;
+  }
+
+  /* MAIN PROFESIONALES */
+  .hero__cards {
+    position: relative;
+    width: 35%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    grid-area: header;
+    position: sticky;
+    background: rgb(65, 16, 16);
+    z-index: 1;
+    top: 0;
+    height: 120px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  }
+
+  main {
+    position: relative;
+    grid-area: main;
+    top: 0;
+  }
+
+  footer {
+    position: relative;
+    top: 0;
+    grid-area: footer;
+  }
+
+  /* MENÚ DESLIZABLE */
+  .header__navBar {
+    display: none;
+  }
+  /* MENÚ HAMBURGESA */
+  .header__nav-toggle {
+    display: none;
+  }
+  /* LOGO */
+  .header__navImg-mobile {
+    display: none;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__navDesktop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10%;
+    gap: 30px;
+  }
+  .header__navDesktop a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .header__navImg {
+    display: initial;
+    width: 14rem;
+    margin-left: 5%;
+  }
+
+  .header__navImg img {
+    width: 100%;
+    display: flex;
+  }
+
+  /* MAIN FIRST SECTION */
+
+  .hero {
+    display: block;
+  }
+
+  .hero__fsLogo-mobile {
+    display: none;
+  }
+
+  /* SECTION DIVIDER */
+  .hero__sectionDivider {
+    display: none;
+  }
+
+  .hero__fs {
+    background: url(/imagenes/caba-1.jpg);
+    box-shadow: -1px 5px 10px #000;
+    justify-content: center;
+    height: 89vh;
+    width: 100%;
+  }
+
+  .hero__fsContainer {
+    background: rgba(95, 95, 95, 0.7);
+    border: 5px solid rgb(65, 16, 16);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__fs img {
+    width: 500px;
+    margin: 25px;
+  }
+
+  .btn {
+    border: none;
+    background: rgb(65, 16, 16, 0.8);
+    padding: 5px 20px;
+    margin: 10px;
+  }
+
+  .hero__btn {
+    margin-top: 1.9rem;
+    transition: 0.2s;
+    box-shadow: 0px 0px 10px rgb(65, 16, 16, 0.8);
+  }
+
+  .hero__btn:hover {
+    background: rgba(122, 30, 30, 0.8);
+    box-shadow: 0px 0px 10px rgba(68, 20, 20, 0.8);
+  }
+
+  .hero__btn a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Lyon", Georgia;
+  }
+
+  /* MAIN SECOND SECTION */
+  .hero__ssMobile-spanDesktop {
+    display: none;
+  }
+
+  .hero__ss-spanDesktop {
+    display: initial;
+  }
+
+  .hero__ssTitleMobile {
+    display: none;
+  }
+
+  .hero__ss p {
+    display: none;
+  }
+
+  .hero__ss img {
+    display: block;
+    width: 620px;
+    box-shadow: 0px 0px 10px #000, 0px 0px 5px #000;
+  }
+
+  .hero__ss {
+    height: 89vh;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero__ss-article {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.7rem;
+  }
+
+  .hero__ss-article h1 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: "Lyon", Georgia;
+  }
+
+  .hero__ss-article p {
+    display: inline-block;
+    text-align: initial;
+  }
+
+  .hero__ss-span {
+    font-weight: 600;
+  }
+
+  /* MAIN PROFESIONALES */
+
+  .hero__lawyers {
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+  }
+
+  .hero__associates {
+    flex-direction: row;
+    justify-content: center;
+    gap: 75px;
+  }
+
+  .hero__cards {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border: 2px solid #000;
+  }
+
+  .hero__text {
+    box-shadow: 0px 0px 3px #000, 0px 0px 3px #000;
+  }
+
+  /* MAIN AREAS */
+
+  .slider {
+    display: none;
+  }
+
+  .hero__areas {
+    margin-top: 50px;
+    display: flex;
+    gap: 75px;
+  }
+
+  .hero__box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 1200px;
+  }
+
+  .hero__areas img {
+    width: 13rem;
+    opacity: 1;
+    border: 6px solid rgb(65, 16, 16);
+    border-radius: 50%;
+  }
+
+  .hero__box span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Lyon", Georgia;
+  }
+
+  .hero__box p {
+    font-size: 1rem;
+    font-family: "Lyon", Georgia;
+    font-style: italic;
+  }
+
+  /* MAIN CARRERA */
+
+  .hero__career {
+    display: flex;
+  }
+
+  .hero__career span:first-child {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .hero__career span:nth-child(2) {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .hero__textContainer {
+    width: 800px;
+    text-align: center;
+    display: block;
+  }
+
+  .hero__textContainer p {
+    font-family: "Lyon", Georgia;
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .hero__career-form {
+    margin-top: 60px;
+    width: 45%;
+  }
+
+  .hero__career-form span {
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+  }
+
+  .form__careerInput-btn {
+    max-width: 18%;
+    background: #fff;
+    border: none;
+  }
+
+  /*MAIN CONTACTO*/
+
+  .hero__contact {
+    margin-top: 50px;
+  }
+
+  .form__contactInput-btn {
+    background: #fff;
+    width: 20%;
+  }
+}

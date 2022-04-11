@@ -206,7 +206,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/imagenes/caba-1.jpg);
+    background-image: url(../imagenes/caba-1.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -251,7 +251,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/imagenes/quienes-somos.jpg);
+    background-image: url(../imagenes/quienes-somos.jpg);
     background-size: cover;
   }
 
@@ -869,7 +869,7 @@ body {
   }
 
   .hero__fs {
-    background: url(/imagenes/caba-1.jpg);
+    background: url(../imagenes/caba-1.jpg);
     box-shadow: -1px 5px 10px #000;
     justify-content: center;
     height: 89vh;

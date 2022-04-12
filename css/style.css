@@ -175,15 +175,6 @@ body {
     right: 15px;
   }
 
-  /* MAIN */
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
   /* MAIN FS */
 
   .hero__fsContainer {
@@ -290,63 +281,60 @@ body {
   /*MAIN PROFESIONALES*/
 
   .hero__lawyers {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
-  .hero__lawyers span {
-    font-size: 1.8rem;
-    font-weight: 500;
+  .hero__lawyers-container {
+    display: flex;
+    flex-direction: column;
   }
 
-  .hero__cards-container {
-    width: 100%;
+  .hero__lawyers-all {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    gap: 25px;
   }
 
-  .hero__cards {
-    position: relative;
-    width: 70%;
-    height: 400px;
-  }
-
-  .hero__cards img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 2px solid #000;
-    opacity: 0.8;
-  }
-
-  .hero__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    position: absolute;
-
-    width: 100%;
-    height: 135px;
-    background: rgb(0, 0, 0, 0.8);
-    bottom: 0;
-  }
-
-  .hero__text span {
-    color: #fff;
-    font-size: 0.9rem;
-  }
-
-  .hero__text span:first-child {
+  .hero__lawyers-all span:first-child {
+    text-align: center;
+    font-family: "Lyon", Georgia;
     font-weight: 600;
-    margin-top: 10px;
+    font-size: 2rem;
+  }
+
+  .hero__lawyers-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 70%;
+    background: linear-gradient(to bottom, #777 70%, #ccc);
+    border: 2px solid #000;
+    border-radius: 1%;
+    box-shadow: 0px 0px 15px 0px rgb(49, 46, 46);
+    padding: 5px;
+  }
+
+  .hero__lawyers-cards img {
+    width: 100%;
+    border-radius: 1%;
+  }
+
+  .hero__lawyers-cards span {
+    text-align: center;
+    font-family: "Lyon", Georgia;
+  }
+
+  .hero__lawyers-cards span:nth-child(2) {
+    font-weight: 600;
     text-decoration: underline;
+  }
+  .hero__lawyers-cards span:last-child {
+    margin-bottom: 5px;
   }
 
   /*MAIN AREAS*/
@@ -740,13 +728,6 @@ body {
     font-family: "Lyon", Georgia;
     line-height: 1.5rem;
   }
-
-  /* MAIN PROFESIONALES */
-  .hero__cards {
-    position: relative;
-    width: 35%;
-    height: 400px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -985,29 +966,6 @@ body {
   }
 
   /* MAIN PROFESIONALES */
-
-  .hero__lawyers {
-    display: flex;
-    margin-top: 50px;
-    gap: 10px;
-  }
-
-  .hero__associates {
-    flex-direction: row;
-    justify-content: center;
-    gap: 75px;
-  }
-
-  .hero__cards {
-    position: relative;
-    width: 300px;
-    height: 500px;
-    border: 2px solid #000;
-  }
-
-  .hero__text {
-    box-shadow: 0px 0px 3px #000, 0px 0px 3px #000;
-  }
 
   /* MAIN AREAS */
 

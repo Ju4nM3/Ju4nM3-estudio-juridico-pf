@@ -865,6 +865,7 @@ body {
 
   .hero__fs {
     background: url(../imagenes/caba-1.jpg);
+    background-repeat: no-repeat;
     box-shadow: -1px 5px 10px #000;
     justify-content: center;
     height: 89vh;

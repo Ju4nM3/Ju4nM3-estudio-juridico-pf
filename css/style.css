@@ -944,6 +944,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     margin: 0 5%;
     width: 100%;
@@ -960,7 +961,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 0.7rem;
   }
 
@@ -973,7 +974,7 @@ body {
 
   .hero__ss-article p {
     display: inline-block;
-    text-align: initial;
+    text-align: center;
   }
 
   .hero__ss-span {
@@ -1221,5 +1222,35 @@ body {
   .form__contactInput-btn {
     background: #fff;
     width: 20%;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* MAIN */
+
+  /* SECOND SECTION */
+
+  .hero__ss-article-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero__ss-article {
+    justify-content: flex-start;
+  }
+
+  .hero__ss-article h1 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: "Lyon", Georgia;
+  }
+
+  .hero__ss-article p {
+    display: inline-block;
+    text-align: initial;
   }
 }

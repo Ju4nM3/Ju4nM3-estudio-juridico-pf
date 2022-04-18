@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet" />
   </head>
-  
+
   <body>
     <!-- HEADER -->
     <header class="header">
@@ -42,64 +42,74 @@
         <!-- DESKTOP -->
         <a class="header__navImg" href="../index.html"><img src="../imagenes/bossi-1.png" alt="logo-estudio-juridico" /></a>
         <ul class="header__navDesktop">
-          <li><div class="sub"></div><a href="../index.html">Inicio</a></li>
-          <li><div class="sub"></div><a href="profesionales.html">Profesionales</a></li>
-          <li><div class="sub"></div><a href="areas.html">Áreas de práctica</a></li>
-          <li><div class="sub"></div><a href="carrera.html">Carrera</a></li>
-          <li><div class="sub"></div><a href="contacto.html">Contacto</a></li>
+          <li>
+            <div class="sub"></div>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <div class="sub"></div>
+            <a href="profesionales.html">Profesionales</a>
+          </li>
+          <li>
+            <div class="sub"></div>
+            <a href="areas.html">Áreas de práctica</a>
+          </li>
+          <li>
+            <div class="sub"></div>
+            <a href="carrera.html">Carrera</a>
+          </li>
+          <li>
+            <div class="sub"></div>
+            <a href="contacto.html">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!-- MAIN -->
 
     <main class="hero__contact">
-      
-      <!-- FORMULARIO DE CONTACTO-->
+      <span class="hero__contact-title">Contacto</span>
 
-      <span>contactanos</span>
+      <span class="hero__contact-p">Si quiere realizar una consulta, complete el formulario, y nosotros nos comunicaremos con usted</span>
 
       <form class="hero__contact-form" action="#">
+        <span>Campos requeridos*</span>
 
-          <div class="form__contactInput">
-            <input type="text" name="nombre" required placeholder="Nombre completo*" />
-            <div class="form__underline"></div>
-          </div>
-          
-          <div class="form__contactInput">
-            <input type="text" name="domicilio" required placeholder="Domicilio*" />
-            <div class="form__underline"></div>
-          </div>
-          
-          <div class="form__contactInput">
-            <input type="tel" name="telefono" id="telefono" required placeholder="Teléfono*" />
-            <div class="form__underline"></div>
-          </div>
+        <!-- Nombre Completo -->
+        <div class="form__contactInput form__boxes">
+          <input type="text" name="nombre" required placeholder="Nombre completo*" />
+          <div class="form__underline"></div>
+        </div>
 
-          <div class="form__contactInput">
-            <input type="email" name="correo" id="correo" required placeholder="Correo Electrónico*" />
-            <div class="form__underline"></div>
-          </div>
+        <!-- Número de Teléfono -->
+        <div class="form__contactInput form__boxes">
+          <input type="tel" name="telefono" id="telefono" required placeholder="Teléfono*" />
+          <div class="form__underline"></div>
+        </div>
 
+        <!-- Correo Electrónico -->
+        <div class="form__contactInput form__boxes">
+          <input type="email" name="correo" id="correo" required placeholder="Correo Electrónico*" />
+          <div class="form__underline"></div>
+        </div>
 
-            <select class="contactSelect" name="area" id="area" required>
-              <option class="form__contactInput-option" value="contratos">Área de Consulta*</option>
-              <option class="form__contactInput-option" value="contratos">Contratos</option>
-              <option class="form__contactInput-option" value="administrativo">Administrativo</option>
-              <option class="form__contactInput-option" value="familia">Familia</option>
-              <option class="form__contactInput-option" value="laboral">Laboral</option>
-              <option class="form__contactInput-option" value="penal">Penal</option>
-              <option class="form__contactInput-option" value="tributario">Tributario</option>
-            </select>
+        <!-- Asunto -->
+        <div class="form__contactInput form__boxes">
+          <input type="text" name="asunto" required placeholder="Asunto*" />
+          <div class="form__underline"></div>
+        </div>
 
-          </div>
+        <!-- Mensaje -->
+        <div class="form__contactInput form__boxes">
+          <textarea class="form__contactTArea" name="" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
+          <div class="form__underline"></div>
+        </div>
 
-          <div class="form__contactInput">
-            <textarea class="form__contactTArea" name="" id="" cols="40" rows="10" placeholder="Mensaje Adicional" ></textarea>
-            <div class="form__underline"></div>
-          </div>
+        <!-- Botón -->
+        <input class="form__contactInput-btn btn" type="submit" value="Enviar" name="enviar" />
+      </form>
 
-          <input class="form__contactInput-btn btn" type="submit" value="Enviar" name="enviar" />
-        
+      <!-- FORMULARIO DE CONTACTO-->
     </main>
 
     <!-- FOOTER -->

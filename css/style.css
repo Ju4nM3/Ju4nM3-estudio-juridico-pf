@@ -339,6 +339,7 @@ body {
   .hero__lawyers-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
   }
 
   .hero__lawyers-all {
@@ -411,6 +412,8 @@ body {
   }
 
   .slider {
+    margin: 50px 0;
+
     width: 100;
     overflow: hidden;
   }
@@ -424,6 +427,7 @@ body {
   }
 
   .slider li {
+    border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     display: flex;
     width: 100%;
@@ -516,6 +520,8 @@ body {
     flex-direction: column;
     align-items: center;
 
+    margin-bottom: 25px;
+
     width: 70%;
   }
 
@@ -568,7 +574,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
 
     background-image: url(../imagenes/obelisco.jpg);
     background-size: cover;
@@ -577,7 +583,7 @@ body {
   }
 
   .hero__contact-title {
-    margin-top: 20px;
+    margin-top: 25px;
 
     text-align: center;
     text-transform: uppercase;
@@ -664,6 +670,10 @@ body {
 
     font-weight: 600;
     background: #fff;
+  }
+
+  .hero__contact-location {
+    display: none;
   }
 
   /* FOOTER */
@@ -1334,6 +1344,36 @@ body {
   }
 
   /*MAIN CONTACTO*/
+  .hero__contact-form {
+    width: 60%;
+  }
+
+  .form__contactInput-btn {
+    margin-top: 20px;
+
+    width: 100px;
+    height: 25px;
+
+    border: none;
+    border-radius: 2px;
+
+    font-weight: 600;
+    background: #fff;
+  }
+
+  .hero__contact-location {
+    display: initial;
+
+    margin-bottom: 30px;
+
+    width: 60%;
+    height: 300px;
+  }
+
+  .hero__contact-location iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (min-width: 1440px) {

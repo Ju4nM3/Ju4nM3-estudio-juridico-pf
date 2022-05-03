@@ -1,0 +1,13 @@
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button {
+  background: #fff;
+  border: none;
+
+  width: 120px;
+  height: 23px;
+}

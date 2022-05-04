@@ -958,6 +958,9 @@ footer {
     font-family: "Lyon", Georgia;
     font-style: italic;
   }
+  .hero__box:last-child {
+    margin-bottom: 20px;
+  }
 
   .hero__contract {
     transform: translateX(-128%);

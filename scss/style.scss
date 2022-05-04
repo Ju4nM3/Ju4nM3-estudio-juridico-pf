@@ -1117,6 +1117,10 @@ footer {
       font-family: "Lyon", Georgia;
       font-style: italic;
     }
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
   }
 
   .hero__contract {

@@ -1,7 +1,12 @@
-$estilos: (
-  color1: rgb(65, 16, 16),
-  color2: #ddd,
-  color3: #777,
-);
+$color1: rgb(65, 16, 16);
+$color2: #ddd;
+$color3: #777;
 
 $primary-font: "Lyon", Georgia;
+
+$mobile-span: (
+  color: #fff,
+  Sfont: 1.4rem,
+  Wfont: 600,
+  Ffont: Georgia,
+);

@@ -261,7 +261,7 @@ footer {
 .hero__lawyers h1 {
   margin-top: 25px;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -327,7 +327,7 @@ footer {
 .hero__areas h1 {
   margin-top: 25px;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -409,7 +409,7 @@ footer {
 .hero__career h1 {
   margin-top: 25px;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .hero__career span:first-child {
@@ -473,7 +473,7 @@ footer {
 .hero__contact h1 {
   margin-top: 25px;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -716,6 +716,26 @@ footer {
     text-align: center;
     font-family: "Lyon", Georgia;
   }
+
+  /* MAIN PROFESIONALES */
+  .hero__lawyers h1 {
+    font-size: 1.7rem;
+  }
+
+  /* MAIN AREAS */
+  .hero__areas h1 {
+    font-size: 1.7rem;
+  }
+
+  /* MAIN CARRERA */
+  .hero__career h1 {
+    font-size: 1.7rem;
+  }
+
+  /* MAIN CONTACTO */
+  .hero__contact h1 {
+    font-size: 1.7rem;
+  }
 }
 @media (min-width: 1024px) {
   header {
@@ -934,6 +954,10 @@ footer {
   }
 
   /* MAIN PROFESIONALES */
+  .hero__lawyers h1 {
+    font-size: 2.2rem;
+  }
+
   .hero__lawyers-all {
     display: flex;
     flex-direction: column;
@@ -968,6 +992,9 @@ footer {
   .hero__areas {
     display: flex;
     gap: 75px;
+  }
+  .hero__areas h1 {
+    font-size: 2.2rem;
   }
   .hero__areas img {
     width: 13rem;
@@ -1114,6 +1141,9 @@ footer {
   .hero__career {
     display: flex;
   }
+  .hero__career h1 {
+    font-size: 2.2rem;
+  }
   .hero__career span:first-child {
     margin-top: 15px;
     margin-bottom: 10px;
@@ -1160,6 +1190,7 @@ footer {
     width: 100%;
     text-align: center;
     margin-bottom: 35px;
+    font-size: 2.2rem;
   }
 
   .hero__contact-container {

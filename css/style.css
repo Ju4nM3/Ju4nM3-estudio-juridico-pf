@@ -15,6 +15,7 @@ a {
   text-decoration: none;
 }
 
+/* LAYOUT */
 body {
   display: grid;
   grid-template-columns: auto;
@@ -44,6 +45,7 @@ footer {
   grid-area: footer;
 }
 
+/* DISEÑO MOBILE */
 /* HEADER */
 .header__navDesktop {
   display: none;
@@ -737,6 +739,7 @@ footer {
     font-size: 1.7rem;
   }
 }
+/* DISEÑO 1024PX */
 @media (min-width: 1024px) {
   header {
     position: sticky;
@@ -1221,6 +1224,7 @@ footer {
     height: 100%;
   }
 }
+/* DISEÑO 1440PX */
 @media (min-width: 1440px) {
   /* MAIN */
   /* SECOND SECTION */
@@ -1251,7 +1255,8 @@ footer {
     width: 60%;
   }
 }
-@media (min-width: 1919px) {
+/* DISEÑO 1920PX */
+@media (min-width: 1920px) {
   /* CONTACTO */
   .hero__contact-form {
     width: 53%;

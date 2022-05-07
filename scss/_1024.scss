@@ -1,0 +1,540 @@
+@media (min-width: 1024px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    height: 120px;
+
+    background: $color1;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  }
+
+  main {
+    position: relative;
+    top: 0;
+  }
+
+  footer {
+    position: relative;
+    top: 0;
+  }
+
+  /* MENÚ DESLIZABLE */
+  .header__navBar {
+    display: none;
+  }
+  /* MENÚ HAMBURGESA */
+  .header__nav-toggle {
+    display: none;
+  }
+  /* LOGO */
+  .header__navImg-mobile {
+    display: none;
+  }
+
+  .header__nav {
+    @include flex-center-center;
+  }
+
+  .header__navDesktop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+
+    margin-right: 10%;
+
+    width: 100%;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:first-child:hover > .sub {
+        opacity: 1;
+      }
+      &:nth-child(2):hover > .sub {
+        opacity: 1;
+      }
+      &:nth-child(3):hover > .sub {
+        opacity: 1;
+      }
+      &:nth-child(4):hover > .sub {
+        opacity: 1;
+      }
+      &:last-child:hover > .sub {
+        opacity: 1;
+      }
+    }
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: #fff;
+    }
+  }
+  .sub {
+    display: initial;
+
+    width: 3px;
+    height: 20px;
+
+    opacity: 0;
+    background: #fff;
+    transition: 0.25s;
+  }
+
+  .header__navImg {
+    display: initial;
+    width: 14rem;
+    margin-left: 5%;
+
+    img {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  /* MAIN FIRST SECTION */
+
+  .hero {
+    display: block;
+  }
+
+  .hero__fsLogo-mobile {
+    display: none;
+  }
+
+  /* SECTION DIVIDER */
+  .hero__sectionDivider {
+    display: none;
+  }
+
+  .hero__fs {
+    justify-content: center;
+
+    width: 100%;
+    height: 89vh;
+
+    background: url(../imagenes/caba-1.jpg);
+    background-repeat: no-repeat;
+    box-shadow: -1px 5px 10px #000;
+
+    img {
+      width: 500px;
+      margin: 25px;
+    }
+  }
+
+  .hero__fsContainer {
+    @include flex-center-center;
+    flex-direction: column;
+
+    height: 500px;
+
+    background: rgba(95, 95, 95, 0.7);
+    border: 5px solid $color1;
+  }
+
+  .hero__btn {
+    padding: 5px 20px;
+    margin: 10px;
+
+    border: none;
+    background: $color1;
+    margin-top: 1.9rem;
+
+    transition: 0.2s;
+    border-radius: 3px;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    &:hover {
+      background: rgba(122, 30, 30, 0.9);
+    }
+  }
+
+  /* MAIN SECOND SECTION */
+  .hero__ssMobile-spanDesktop {
+    display: none;
+  }
+
+  .hero__ss-spanDesktop {
+    display: initial;
+  }
+
+  .hero__ssTitleMobile {
+    display: none;
+  }
+
+  .hero__ss {
+    @include flex-center-center;
+    flex-direction: row;
+
+    margin: 0;
+
+    height: 89vh;
+
+    p {
+      display: none;
+    }
+
+    img {
+      display: block;
+      width: 50%;
+      box-shadow: 0px 0px 10px #000, 0px 0px 5px #000;
+    }
+  }
+
+  .hero__ss-article-container {
+    @include flex-center-center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    margin: 0 5%;
+
+    width: 100%;
+  }
+
+  .hero__ss-article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.7rem;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      font-weight: 600;
+      font-family: "Lyon", Georgia;
+    }
+
+    p {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  .hero__ss-span {
+    font-weight: 600;
+  }
+
+  /* MAIN PROFESIONALES */
+
+  .hero__lawyers {
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+  .hero__lawyers-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    margin-top: 40px;
+  }
+
+  .hero__lawyers-cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .hero__lawyers-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 5px;
+
+    width: 25%;
+
+    background: linear-gradient(to bottom, #777 70%, #ccc);
+    border-radius: 1%;
+    box-shadow: 0px 0px 15px 0px rgb(49, 46, 46);
+  }
+
+  /* MAIN AREAS */
+
+  .slider {
+    display: none;
+  }
+
+  .hero__areas {
+    display: flex;
+    gap: 75px;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    img {
+      width: 13rem;
+      opacity: 1;
+      border: 6px solid $color1;
+      border-radius: 50%;
+    }
+  }
+
+  .hero__box {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    margin: 0 10%;
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 600;
+      font-family: "Lyon", Georgia;
+    }
+
+    p {
+      font-size: 1rem;
+      font-family: "Lyon", Georgia;
+      font-style: italic;
+    }
+
+    &:last-child {
+      margin-bottom: 75px;
+    }
+  }
+
+  .hero__contract {
+    transform: translateX(-128%);
+    opacity: 0;
+
+    animation-name: proslidercontract;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+  .hero__adm {
+    transform: translateX(0%);
+    opacity: 0;
+
+    animation-name: proslideradm;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+  .hero__family {
+    transform: translateX(0%);
+    opacity: 0;
+
+    animation-name: prosliderfamily;
+    animation-duration: 2s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+  }
+  .hero__labor {
+    transform: translateX(0%);
+    opacity: 0;
+
+    animation-name: prosliderlabor;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+  }
+  .hero__criminal {
+    transform: translateX(0%);
+    opacity: 0;
+
+    animation-name: proslidercriminal;
+    animation-duration: 2s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+  }
+  .hero__tax {
+    transform: translateX(0%);
+    opacity: 0;
+
+    animation-name: proslidertax;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes proslidercontract {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes proslideradm {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes prosliderfamily {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes prosliderlabor {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes proslidercriminal {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes proslidertax {
+    0% {
+      transform: translateX(-128%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  /* MAIN CARRERA */
+
+  .hero__career {
+    display: flex;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    span {
+      &:first-child {
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+      &:nth-child(2) {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+  }
+
+  .hero__textContainer {
+    display: block;
+
+    margin-top: 35px;
+
+    width: 800px;
+    text-align: center;
+
+    p {
+      line-height: 1.6;
+
+      font-family: "Lyon", Georgia;
+      font-size: 1.25rem;
+    }
+  }
+
+  .hero__career-form {
+    margin-top: 65px;
+
+    width: 45%;
+
+    span {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+  }
+
+  /*MAIN CONTACTO*/
+  .hero__contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 2.2rem;
+    }
+  }
+
+  .hero__contact-container {
+    width: 30%;
+    order: 2;
+    margin-left: 30px;
+  }
+
+  .hero__contact-form {
+    order: 3;
+
+    width: 72%;
+
+    margin-top: 65px;
+    margin-bottom: 75px;
+  }
+
+  .hero__contact-iframe {
+    display: initial;
+    order: 1;
+
+    margin-bottom: 0px;
+
+    width: 400px;
+    height: 400px;
+
+    border: none;
+    border-radius: 12px;
+  }
+
+  .hero__contact-iframe iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

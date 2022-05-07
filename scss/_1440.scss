@@ -1,0 +1,32 @@
+@media (min-width: 1440px) {
+  /* MAIN */
+
+  /* SECOND SECTION */
+
+  .hero__ss-article-container {
+    @include flex-center-center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .hero__ss-article {
+    justify-content: flex-start;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      font-weight: 600;
+      font-family: "Lyon", Georgia;
+    }
+
+    p {
+      display: inline-block;
+      text-align: initial;
+    }
+  }
+
+  /* CONTACTO */
+  .hero__contact-form {
+    width: 60%;
+  }
+}

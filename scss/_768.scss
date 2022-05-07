@@ -1,0 +1,96 @@
+@media (min-width: 768px) {
+  /* MENÚ DESLIZABLE */
+
+  .header__navBar {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    z-index: 9000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+
+    width: 35%;
+    min-height: 100vh;
+
+    background: $color1;
+
+    transition: 0.69s;
+
+    img {
+      width: 10rem;
+      margin-top: 45px;
+    }
+  }
+
+  .header__navBar.is-active {
+    right: 65%;
+    z-index: 9000;
+  }
+
+  .header__mobile-navBar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .header__navBar {
+    a {
+      width: 100%;
+      max-width: 200px;
+
+      margin: 0 auto 16px;
+
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #fff;
+    }
+  }
+
+  /* MAIN SECOND SECTION */
+
+  .hero__ssMobile-spanDesktop {
+    display: initial;
+
+    line-height: 1.5rem;
+
+    text-align: center;
+    font-family: "Lyon", Georgia;
+  }
+
+  /* MAIN PROFESIONALES */
+
+  .hero__lawyers {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  /* MAIN AREAS */
+
+  .hero__areas {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  /* MAIN CARRERA */
+
+  .hero__career {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  /* MAIN CONTACTO */
+
+  .hero__contact {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+}

@@ -44,8 +44,7 @@ header {
   align-items: center;
 
   background-color: $color3;
-  border-bottom: 2px solid #000;
-  box-shadow: 0px 0px 10px #000;
+  box-shadow: 0px 0px 5px $color3, 0px 0px 4px $color3, 0px 0px 3px $color3, 0px 0px 2px $color3, 0px 0px 1px $color3;
 }
 
 main {
@@ -57,18 +56,18 @@ footer {
 }
 
 /* DISEÑO MOBILE */
-@import "header";
-@import "main";
-@import "footer";
+@import "estructura/header";
+@import "estructura/main";
+@import "estructura/footer";
 
 /* DISEÑO 768PX */
-@import "768";
+@import "breakpoints/768";
 
 /* DISEÑO 1024PX */
-@import "1024";
+@import "breakpoints/1024";
 
 /* DISEÑO 1440PX */
-@import "1440";
+@import "breakpoints/1440";
 
 /* DISEÑO 1920PX */
 @media (min-width: 1920px) {

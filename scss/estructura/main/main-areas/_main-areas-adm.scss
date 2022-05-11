@@ -1,0 +1,42 @@
+.hero__adm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    @include title;
+  }
+
+  img {
+    @include areas-img;
+  }
+}
+
+.hero__adm-container {
+  @include areas-text;
+
+  p {
+    margin-top: 15px;
+    padding: 5px;
+
+    text-align: center;
+
+    font-family: Georgia;
+
+    line-height: 1.5rem;
+  }
+
+  ul {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+
+    li {
+      list-style-type: initial;
+
+      text-transform: uppercase;
+
+      padding: 3px 0px;
+    }
+  }
+}

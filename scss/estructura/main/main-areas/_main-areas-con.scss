@@ -1,0 +1,50 @@
+.hero__con {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    @include title;
+  }
+
+  img {
+    @include areas-img;
+  }
+}
+
+.hero__con-container {
+  @include areas-text;
+
+  p {
+    margin-top: 15px;
+    padding: 5px;
+
+    text-align: center;
+
+    font-family: Georgia;
+
+    line-height: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@keyframes shadowimg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shadowtext {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}

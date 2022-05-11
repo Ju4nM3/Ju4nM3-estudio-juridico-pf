@@ -1,0 +1,73 @@
+/*MAIN PROFESIONALES*/
+.hero__lawyers {
+  @include flex-center-center;
+  flex-direction: column;
+
+  h1 {
+    @include title;
+  }
+}
+
+.hero__lawyers-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+
+.hero__lawyers-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  margin-top: 25px;
+
+  span {
+    &:first-child {
+      text-align: center;
+
+      font-weight: 600;
+      font-size: 2rem;
+    }
+  }
+}
+
+.hero__lawyers-cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.hero__lawyers-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 5px;
+
+  width: 90%;
+
+  background: linear-gradient(to bottom, #777 70%, #ccc);
+  border-radius: 1%;
+  box-shadow: 0px 0px 15px 0px rgb(49, 46, 46);
+
+  img {
+    width: 100%;
+    border-radius: 1%;
+  }
+
+  span {
+    text-align: center;
+    font-family: "Lyon", Georgia;
+
+    &:nth-child(2) {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    &:last-child {
+      margin-bottom: 5px;
+    }
+  }
+}

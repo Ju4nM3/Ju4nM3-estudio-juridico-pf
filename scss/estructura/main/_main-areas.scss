@@ -1,0 +1,153 @@
+/*MAIN AREAS*/
+
+.hero__areas {
+  @include flex-center-center;
+  flex-direction: column;
+
+  h1 {
+    @include title;
+  }
+}
+
+.hero__desktop-box {
+  display: none;
+}
+
+.slider {
+  margin-top: 50px;
+
+  overflow: hidden;
+
+  ul {
+    display: flex;
+    width: 600%;
+
+    animation: slider 30s infinite;
+    animation-direction: alternate;
+
+    li {
+      border-top: 2px solid $color1;
+      border-bottom: 2px solid $color1;
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+@keyframes slider {
+  0% {
+    margin-left: 0;
+  }
+  15% {
+    margin-left: 0;
+  }
+
+  17% {
+    margin-left: -100%;
+  }
+  32% {
+    margin-left: -100%;
+  }
+
+  34% {
+    margin-left: -200%;
+  }
+  49% {
+    margin-left: -200%;
+  }
+
+  51% {
+    margin-left: -300%;
+  }
+  66% {
+    margin-left: -300%;
+  }
+
+  68% {
+    margin-left: -400%;
+  }
+  83% {
+    margin-left: -400%;
+  }
+
+  85% {
+    margin-left: -500%;
+  }
+  100% {
+    margin-left: -500%;
+  }
+}
+
+.hero__box-container {
+  @include flex-center-center;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+
+  margin-top: 40px;
+  margin-bottom: 75px;
+
+  a {
+    width: 100%;
+
+    text-decoration: none;
+
+    &:link {
+      color: #000;
+    }
+
+    &:visited {
+      color: #000;
+    }
+  }
+}
+
+.hero__box {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 40px;
+
+  background: linear-gradient(to right, $color1-2, #999);
+
+  i {
+    width: 15px;
+    margin-left: 17px;
+    color: #000;
+  }
+
+  span {
+    margin-left: 25px;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+  }
+}
+
+/*MAIN AREA ADMINISTRATIVO*/
+@import "main-areas/main-areas-adm";
+
+/*MAIN AREA CONTRATOS*/
+@import "main-areas/main-areas-con";
+
+/*MAIN AREA FAMILIA*/
+@import "main-areas/main-areas-fam";
+
+/*MAIN AREA LABORAL*/
+@import "main-areas/main-areas-lab";
+
+/*MAIN AREA PENAL*/
+@import "main-areas/main-areas-pen";
+
+/*MAIN AREA TRIBUTARIO*/
+@import "main-areas/main-areas-tri";

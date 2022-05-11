@@ -7,6 +7,7 @@
     height: 120px;
 
     background: $color1;
+    box-shadow: 0px 0px 0px $color3;
     border-bottom: 2px solid rgba(0, 0, 0, 0.8);
   }
 
@@ -271,169 +272,173 @@
   /* MAIN AREAS */
 
   .slider {
-    display: none;
-  }
+    width: 75%;
+    border: 2px solid $color1;
 
-  .hero__areas {
-    display: flex;
-    gap: 75px;
+    ul {
+      li {
+        border-top: none;
+        border-bottom: none;
 
-    h1 {
-      font-size: 2.2rem;
+        display: flex;
+        width: 100%;
+      }
     }
 
     img {
-      width: 13rem;
-      opacity: 1;
-      border: 6px solid $color1;
-      border-radius: 50%;
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+
+  .hero__box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+
+    width: 60%;
+
+    justify-items: center;
+
+    margin-top: 75px;
+
+    a {
+      width: 225px;
+
+      transition: 0.25s;
+
+      &:hover {
+        border-radius: 2px;
+        background: $color1-2;
+
+        color: #bbb;
+      }
     }
   }
 
   .hero__box {
-    display: flex;
-    align-items: center;
-    gap: 35px;
+    background: transparent;
 
-    margin: 0 10%;
+    i {
+      width: 15px;
+      margin-left: 15px;
+      color: #000;
+    }
 
     span {
-      font-size: 1.2rem;
+      margin-left: 25px;
+
+      font-size: 1.1rem;
       font-weight: 600;
-      font-family: "Lyon", Georgia;
-    }
 
-    p {
-      font-size: 1rem;
-      font-family: "Lyon", Georgia;
-      font-style: italic;
-    }
-
-    &:last-child {
-      margin-bottom: 75px;
+      text-transform: uppercase;
     }
   }
 
-  .hero__contract {
-    transform: translateX(-128%);
-    opacity: 0;
+  /* MAIN AREAS ADMINISTRATIVO*/
 
-    animation-name: proslidercontract;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-  }
   .hero__adm {
-    transform: translateX(0%);
-    opacity: 0;
+    img {
+      @include areas-img;
 
-    animation-name: proslideradm;
-    animation-duration: 2s;
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards;
-  }
-  .hero__family {
-    transform: translateX(0%);
-    opacity: 0;
-
-    animation-name: prosliderfamily;
-    animation-duration: 2s;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
-  }
-  .hero__labor {
-    transform: translateX(0%);
-    opacity: 0;
-
-    animation-name: prosliderlabor;
-    animation-duration: 2s;
-    animation-delay: 1.2s;
-    animation-fill-mode: forwards;
-  }
-  .hero__criminal {
-    transform: translateX(0%);
-    opacity: 0;
-
-    animation-name: proslidercriminal;
-    animation-duration: 2s;
-    animation-delay: 1.6s;
-    animation-fill-mode: forwards;
-  }
-  .hero__tax {
-    transform: translateX(0%);
-    opacity: 0;
-
-    animation-name: proslidertax;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes proslidercontract {
-    0% {
-      transform: translateX(-128%);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0%);
-      opacity: 1;
+      width: 40%;
     }
   }
-  @keyframes proslideradm {
-    0% {
-      transform: translateX(-128%);
-      opacity: 0;
-    }
 
-    100% {
-      transform: translateX(0%);
-      opacity: 1;
+  .hero__adm-container {
+    @include areas-text;
+
+    width: 40%;
+
+    ul {
+      li {
+        br {
+          display: none;
+        }
+      }
     }
   }
-  @keyframes prosliderfamily {
-    0% {
-      transform: translateX(-128%);
-      opacity: 0;
-    }
 
-    100% {
-      transform: translateX(0%);
-      opacity: 1;
+  /* MAIN AREAS CONTRATOS*/
+
+  .hero__con {
+    img {
+      @include areas-img;
+
+      width: 40%;
     }
   }
-  @keyframes prosliderlabor {
-    0% {
-      transform: translateX(-128%);
-      opacity: 0;
-    }
 
-    100% {
-      transform: translateX(0%);
-      opacity: 1;
+  .hero__con-container {
+    @include areas-text;
+
+    width: 40%;
+  }
+
+  /* MAIN AREAS FAMILIA*/
+
+  .hero__fam {
+    img {
+      @include areas-img;
+
+      width: 40%;
     }
   }
-  @keyframes proslidercriminal {
-    0% {
-      transform: translateX(-128%);
-      opacity: 0;
-    }
 
-    100% {
-      transform: translateX(0%);
-      opacity: 1;
+  .hero__fam-container {
+    @include areas-text;
+
+    width: 40%;
+  }
+
+  /* MAIN AREAS LABORAL*/
+
+  .hero__lab {
+    img {
+      @include areas-img;
+
+      width: 40%;
     }
   }
-  @keyframes proslidertax {
-    0% {
-      transform: translateX(-128%);
-      opacity: 0;
-    }
 
-    100% {
-      transform: translateX(0%);
-      opacity: 1;
+  .hero__lab-container {
+    @include areas-text;
+
+    width: 40%;
+  }
+
+  /* MAIN AREAS PENAL*/
+
+  .hero__pen {
+    img {
+      @include areas-img;
+
+      width: 40%;
     }
+  }
+
+  .hero__pen-container {
+    @include areas-text;
+
+    width: 40%;
+  }
+
+  /* MAIN AREAS TRIBUTARIO*/
+
+  .hero__tri {
+    img {
+      @include areas-img;
+
+      width: 40%;
+    }
+  }
+
+  .hero__tri-container {
+    @include areas-text;
+
+    width: 40%;
   }
 
   /* MAIN CARRERA */

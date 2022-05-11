@@ -19,3 +19,26 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+@mixin areas-img {
+  margin-top: 20px;
+  width: 95%;
+  animation-name: shadowimg;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+@mixin areas-text {
+  width: 95%;
+
+  margin-bottom: 75px;
+  background: $color2;
+
+  border-radius: 2px;
+
+  animation-name: shadowtext;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}

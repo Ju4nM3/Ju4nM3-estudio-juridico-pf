@@ -1295,6 +1295,7 @@ footer {
     align-items: flex-start;
     justify-content: center;
     gap: 0.7rem;
+    width: 50%;
   }
   .hero__ss-article h1 {
     text-transform: uppercase;

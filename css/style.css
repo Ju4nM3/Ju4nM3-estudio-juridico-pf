@@ -1343,6 +1343,10 @@ footer {
   }
 
   /* MAIN AREAS */
+  .hero__areas h1 {
+    font-size: 2.2rem;
+  }
+
   .slider {
     width: 75%;
     border: 2px solid rgb(65, 16, 16);

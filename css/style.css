@@ -1402,6 +1402,262 @@ footer {
     animation-duration: 2s;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+    width: 70%;
+  }
+
+  .hero__adm-container {
+    width: 95%;
+    margin-bottom: 75px;
+    background: #ddd;
+    border-radius: 2px;
+    animation-name: shadowtext;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    width: 70%;
+  }
+  .hero__adm-container ul li br {
+    display: none;
+  }
+
+  /* MAIN AREAS CONTRATOS*/
+  .hero__con img {
+    margin-top: 20px;
+    width: 95%;
+    animation-name: shadowimg;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    width: 70%;
+  }
+
+  .hero__con-container {
+    width: 95%;
+    margin-bottom: 75px;
+    background: #ddd;
+    border-radius: 2px;
+    animation-name: shadowtext;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    width: 70%;
+  }
+
+  /* MAIN AREAS FAMILIA*/
+  .hero__fam img {
+    margin-top: 20px;
+    width: 95%;
+    animation-name: shadowimg;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    width: 70%;
+  }
+
+  .hero__fam-container {
+    width: 95%;
+    margin-bottom: 75px;
+    background: #ddd;
+    border-radius: 2px;
+    animation-name: shadowtext;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    width: 70%;
+  }
+
+  /* MAIN AREAS LABORAL*/
+  .hero__lab img {
+    margin-top: 20px;
+    width: 95%;
+    animation-name: shadowimg;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    width: 70%;
+  }
+
+  .hero__lab-container {
+    width: 95%;
+    margin-bottom: 75px;
+    background: #ddd;
+    border-radius: 2px;
+    animation-name: shadowtext;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    width: 70%;
+  }
+
+  /* MAIN AREAS PENAL*/
+  .hero__pen img {
+    margin-top: 20px;
+    width: 95%;
+    animation-name: shadowimg;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    width: 70%;
+  }
+
+  .hero__pen-container {
+    width: 95%;
+    margin-bottom: 75px;
+    background: #ddd;
+    border-radius: 2px;
+    animation-name: shadowtext;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    width: 70%;
+  }
+
+  /* MAIN AREAS TRIBUTARIO*/
+  .hero__tri img {
+    margin-top: 20px;
+    width: 95%;
+    animation-name: shadowimg;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    width: 70%;
+  }
+
+  .hero__tri-container {
+    width: 95%;
+    margin-bottom: 75px;
+    background: #ddd;
+    border-radius: 2px;
+    animation-name: shadowtext;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    width: 70%;
+  }
+
+  /* MAIN CARRERA */
+  .hero__career {
+    display: flex;
+  }
+  .hero__career h1 {
+    font-size: 2.2rem;
+  }
+  .hero__career span:first-child {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .hero__career span:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .hero__textContainer {
+    display: block;
+    margin-top: 35px;
+    width: 800px;
+    text-align: center;
+  }
+  .hero__textContainer p {
+    line-height: 1.6;
+    font-family: "Lyon", Georgia;
+    font-size: 1.25rem;
+  }
+
+  .hero__career-form {
+    margin-top: 65px;
+    width: 45%;
+  }
+  .hero__career-form span {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  /*MAIN CONTACTO*/
+  .hero__contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+  }
+  .hero__contact h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.2rem;
+  }
+
+  .hero__contact-container {
+    width: 30%;
+    order: 2;
+    margin-left: 30px;
+  }
+
+  .hero__contact-form {
+    order: 3;
+    width: 72%;
+    margin-top: 65px;
+    margin-bottom: 75px;
+  }
+
+  .hero__contact-iframe {
+    display: initial;
+    order: 1;
+    margin-bottom: 0px;
+    width: 400px;
+    height: 400px;
+    border: none;
+    border-radius: 12px;
+  }
+
+  .hero__contact-iframe iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* DISEÑO 1440PX */
+@media (min-width: 1440px) {
+  /* MAIN */
+  /* SECOND SECTION */
+  .hero__ss-article-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .hero__ss-article {
+    justify-content: flex-start;
+  }
+  .hero__ss-article h1 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: "Lyon", Georgia;
+  }
+  .hero__ss-article p {
+    display: inline-block;
+    text-align: initial;
+  }
+
+  /* MAIN AREAS */
+  .slider {
+    width: 50%;
+  }
+
+  /* MAIN AREAS ADMINISTRATIVO*/
+  .hero__adm img {
+    margin-top: 20px;
+    width: 95%;
+    animation-name: shadowimg;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     width: 40%;
   }
 
@@ -1532,121 +1788,6 @@ footer {
     animation-fill-mode: forwards;
     animation-duration: 2s;
     width: 40%;
-  }
-
-  /* MAIN CARRERA */
-  .hero__career {
-    display: flex;
-  }
-  .hero__career h1 {
-    font-size: 2.2rem;
-  }
-  .hero__career span:first-child {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-  .hero__career span:nth-child(2) {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
-    font-style: italic;
-  }
-
-  .hero__textContainer {
-    display: block;
-    margin-top: 35px;
-    width: 800px;
-    text-align: center;
-  }
-  .hero__textContainer p {
-    line-height: 1.6;
-    font-family: "Lyon", Georgia;
-    font-size: 1.25rem;
-  }
-
-  .hero__career-form {
-    margin-top: 65px;
-    width: 45%;
-  }
-  .hero__career-form span {
-    font-weight: 700;
-    font-size: 1rem;
-  }
-
-  /*MAIN CONTACTO*/
-  .hero__contact {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0;
-  }
-  .hero__contact h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 35px;
-    font-size: 2.2rem;
-  }
-
-  .hero__contact-container {
-    width: 30%;
-    order: 2;
-    margin-left: 30px;
-  }
-
-  .hero__contact-form {
-    order: 3;
-    width: 72%;
-    margin-top: 65px;
-    margin-bottom: 75px;
-  }
-
-  .hero__contact-iframe {
-    display: initial;
-    order: 1;
-    margin-bottom: 0px;
-    width: 400px;
-    height: 400px;
-    border: none;
-    border-radius: 12px;
-  }
-
-  .hero__contact-iframe iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
-/* DISEÑO 1440PX */
-@media (min-width: 1440px) {
-  /* MAIN */
-  /* SECOND SECTION */
-  .hero__ss-article-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
-  .hero__ss-article {
-    justify-content: flex-start;
-  }
-  .hero__ss-article h1 {
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    font-weight: 600;
-    font-family: "Lyon", Georgia;
-  }
-  .hero__ss-article p {
-    display: inline-block;
-    text-align: initial;
-  }
-
-  /* MAIN AREAS */
-  .slider {
-    width: 50%;
   }
 
   /* MAIN CONTACTO */

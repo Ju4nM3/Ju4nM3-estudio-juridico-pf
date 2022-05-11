@@ -30,6 +30,110 @@
     width: 50%;
   }
 
+  /* MAIN AREAS ADMINISTRATIVO*/
+
+  .hero__adm {
+    img {
+      @include areas-img;
+
+      width: 40%;
+    }
+  }
+
+  .hero__adm-container {
+    @include areas-text;
+
+    width: 40%;
+
+    ul {
+      li {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /* MAIN AREAS CONTRATOS*/
+
+  .hero__con {
+    img {
+      @include areas-img;
+
+      width: 40%;
+    }
+  }
+
+  .hero__con-container {
+    @include areas-text;
+
+    width: 40%;
+  }
+
+  /* MAIN AREAS FAMILIA*/
+
+  .hero__fam {
+    img {
+      @include areas-img;
+
+      width: 40%;
+    }
+  }
+
+  .hero__fam-container {
+    @include areas-text;
+
+    width: 40%;
+  }
+
+  /* MAIN AREAS LABORAL*/
+
+  .hero__lab {
+    img {
+      @include areas-img;
+
+      width: 40%;
+    }
+  }
+
+  .hero__lab-container {
+    @include areas-text;
+
+    width: 40%;
+  }
+
+  /* MAIN AREAS PENAL*/
+
+  .hero__pen {
+    img {
+      @include areas-img;
+
+      width: 40%;
+    }
+  }
+
+  .hero__pen-container {
+    @include areas-text;
+
+    width: 40%;
+  }
+
+  /* MAIN AREAS TRIBUTARIO*/
+
+  .hero__tri {
+    img {
+      @include areas-img;
+
+      width: 40%;
+    }
+  }
+
+  .hero__tri-container {
+    @include areas-text;
+
+    width: 40%;
+  }
+
   /* MAIN CONTACTO */
   .hero__contact-form {
     width: 60%;

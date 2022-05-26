@@ -14,6 +14,8 @@
 
 .hero__pen-container {
   @include areas-text;
+  display: flex;
+  flex-direction: column;
 
   p {
     margin-top: 15px;

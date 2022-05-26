@@ -16,13 +16,20 @@
       text-transform: uppercase;
       font-size: 1.7rem;
       font-weight: 600;
-      font-family: "Lyon", Georgia;
+      font-family: $primary-font;
     }
 
     p {
       display: inline-block;
       text-align: initial;
     }
+  }
+
+  /*MAIN PROFESIONALES*/
+  .hero__partners {
+    width: 70%;
+    row-gap: 0px;
+    column-gap: 100px;
   }
 
   /* MAIN AREAS */

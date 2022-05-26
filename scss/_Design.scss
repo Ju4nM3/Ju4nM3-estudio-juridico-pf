@@ -1,13 +1,15 @@
 $color1: rgb(65, 16, 16);
 $color1-2: rgba(65, 16, 16, 0.6);
+$color1-3: rgba(65, 16, 16, 0.9);
 $color2: #ddd;
 $color3: #777;
+$color4: #444;
 
-$primary-font: "Lyon", Georgia;
+$primary-font: "Montserrat", sans-serif;
 
 $mobile-span: (
   color: #fff,
   Sfont: 1.4rem,
   Wfont: 600,
-  Ffont: Georgia,
+  Ffont: "Montserrat",
 );

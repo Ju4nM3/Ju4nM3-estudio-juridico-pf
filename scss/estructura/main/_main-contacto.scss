@@ -124,9 +124,7 @@
 }
 
 .form__contactInput-btn {
-  @extend .btn;
-
-  width: 100px;
+  @include button;
 }
 
 .hero__contact-iframe {

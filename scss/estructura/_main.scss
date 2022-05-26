@@ -1,12 +1,12 @@
 /* LOGO WHATSAPP */
 .fa-whatsapp {
   position: fixed;
-  right: 15px;
+  right: 25px;
   bottom: 15px;
   z-index: 10000;
 
   color: rgb(40, 136, 37);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 /* MAIN */
@@ -82,7 +82,7 @@
     width: 90%;
 
     text-align: center;
-    font-family: "Lyon", Georgia;
+    font-family: $primary-font;
     line-height: 1.5rem;
   }
 }
@@ -123,6 +123,7 @@
 
 .hero__ssMobile-spanP {
   font-weight: map-get($mobile-span, Wfont);
+  font-family: map-get($mobile-span, Ffont);
 }
 
 .hero__ssMobile-spanDesktop {

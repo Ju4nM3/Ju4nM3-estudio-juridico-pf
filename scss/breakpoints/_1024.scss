@@ -1,4 +1,5 @@
 @media (min-width: 1024px) {
+  /*HEADER*/
   header {
     position: sticky;
     top: 0;
@@ -50,22 +51,23 @@
 
     li {
       display: flex;
+      justify-content: center;
       align-items: center;
       gap: 10px;
 
-      &:first-child:hover > .sub {
+      &:first-child:hover > .nav__left {
         opacity: 1;
       }
-      &:nth-child(2):hover > .sub {
+      &:nth-child(2):hover > .nav__left {
         opacity: 1;
       }
-      &:nth-child(3):hover > .sub {
+      &:nth-child(3):hover > .nav__left {
         opacity: 1;
       }
-      &:nth-child(4):hover > .sub {
+      &:nth-child(4):hover > .nav__left {
         opacity: 1;
       }
-      &:last-child:hover > .sub {
+      &:last-child:hover > .nav__left {
         opacity: 1;
       }
     }
@@ -76,7 +78,35 @@
       color: #fff;
     }
   }
-  .sub {
+
+  .current {
+    position: relative;
+    top: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+
+      height: 2px;
+
+      background: #fff;
+
+      animation-name: underline;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes underline {
+      0% {
+        width: 0px;
+      }
+      100% {
+        width: 25px;
+      }
+    }
+  }
+
+  .nav__left {
     display: initial;
 
     width: 3px;
@@ -154,7 +184,7 @@
       text-transform: uppercase;
       text-decoration: none;
       font-size: 1.5rem;
-      font-weight: 500;
+      font-weight: 400;
       color: #fff;
     }
 
@@ -213,13 +243,35 @@
     align-items: flex-start;
     justify-content: center;
     gap: 0.7rem;
-    width: 50%;
+    width: 65%;
 
     h1 {
       text-transform: uppercase;
       font-size: 1.7rem;
       font-weight: 600;
-      font-family: "Lyon", Georgia;
+      font-family: $primary-font;
+
+      display: block;
+      white-space: nowrap;
+      width: 15ch;
+      animation: typing 2s forwards steps(15), blink 0.5s 2.5s step-start 2;
+
+      overflow: hidden;
+    }
+
+    @keyframes typing {
+      0% {
+        width: 4ch;
+      }
+      100% {
+        width: 15ch;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
     }
 
     p {
@@ -230,6 +282,7 @@
 
   .hero__ss-span {
     font-weight: 600;
+    font-family: map-get($mobile-span, Ffont);
   }
 
   /* MAIN PROFESIONALES */
@@ -238,36 +291,6 @@
     h1 {
       font-size: 2.2rem;
     }
-  }
-
-  .hero__lawyers-all {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-
-    margin-top: 40px;
-  }
-
-  .hero__lawyers-cardContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-  }
-
-  .hero__lawyers-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-    padding: 5px;
-
-    width: 25%;
-
-    background: linear-gradient(to bottom, #777 70%, #ccc);
-    border-radius: 1%;
-    box-shadow: 0px 0px 15px 0px rgb(49, 46, 46);
   }
 
   /* MAIN AREAS */
@@ -335,12 +358,29 @@
     }
 
     span {
+      position: relative;
+      top: 0;
+
       margin-left: 25px;
 
       font-size: 1.1rem;
       font-weight: 600;
 
       text-transform: uppercase;
+
+      display: flex;
+      flex-direction: column;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 23px;
+
+        background: #000;
+
+        height: 1px;
+        width: 100%;
+      }
     }
   }
 
@@ -486,8 +526,8 @@
     p {
       line-height: 1.6;
 
-      font-family: "Lyon", Georgia;
-      font-size: 1.25rem;
+      font-family: $primary-font;
+      font-size: 1.15rem;
     }
   }
 
@@ -547,6 +587,112 @@
 
   .hero__contact-iframe iframe {
     width: 100%;
+    height: 100%;
+  }
+  /*FOOTER*/
+  .footer__divider {
+    display: none;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-rows: min-content min-content 80px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "indice logo  contacto"
+      "indice redes  direccion"
+      "copyright copyright copyright";
+  }
+
+  .footer__logo {
+    grid-area: logo;
+    justify-self: center;
+  }
+
+  .footer__socialMedia {
+    grid-area: redes;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    width: 100%;
+  }
+
+  .footer__socialMedia-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+
+    width: 100%;
+
+    a {
+      font-size: 1.2rem;
+      color: $color2;
+      padding: 0 2%;
+      border-radius: 100%;
+    }
+
+    i {
+      border: 2px solid $color2;
+      padding: 10px;
+      border-radius: 100%;
+
+      &:hover {
+        color: $color3;
+        border-color: $color3;
+      }
+    }
+  }
+
+  .footer__nav {
+    display: initial;
+    grid-area: indice;
+    justify-self: center;
+    margin-top: 10px;
+  }
+
+  .footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    li {
+      position: relative;
+      top: 0;
+
+      a {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.8rem;
+        color: #fff;
+
+        &:hover {
+          color: $color3;
+        }
+      }
+    }
+  }
+
+  .footer__contact {
+    grid-area: contacto;
+    justify-self: center;
+
+    padding-top: 30px;
+  }
+
+  .footer__location {
+    grid-area: direccion;
+    justify-self: center;
+
+    padding-bottom: 20px;
+  }
+
+  .footer__copyContainer {
+    grid-area: copyright;
+
     height: 100%;
   }
 }

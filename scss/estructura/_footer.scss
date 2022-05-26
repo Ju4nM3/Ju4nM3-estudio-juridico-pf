@@ -1,4 +1,8 @@
 /* FOOTER */
+.footer__nav {
+  display: none;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -61,6 +65,7 @@
     font-size: 1.2rem;
     color: $color2;
     padding: 0px 15px;
+    border-radius: 100%;
   }
 
   i {

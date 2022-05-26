@@ -5,69 +5,77 @@
 
   h1 {
     @include title;
+    margin-bottom: 40px;
   }
 }
 
-.hero__lawyers-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 75px;
-}
+.hero__lawyers-title {
+  @include pro-title;
 
-.hero__lawyers-all {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
+  width: 100%;
 
   margin-top: 25px;
 
-  span {
-    &:first-child {
-      text-align: center;
+  text-align: center;
+}
 
-      font-weight: 600;
-      font-size: 2rem;
-    }
+.hero__lawyers-title {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+
+    display: inline-block;
+    background: #000;
+    width: 30%;
+    height: 2px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+
+    display: inline-block;
+    background: #000;
+    width: 30%;
+    height: 2px;
   }
 }
 
-.hero__lawyers-cardContainer {
+.hero__partners {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 25px;
-}
-
-.hero__lawyers-cards {
-  display: flex;
   flex-direction: column;
-  gap: 5px;
 
-  padding: 5px;
+  width: 85%;
 
-  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 25px;
 
-  background: linear-gradient(to bottom, #777 70%, #ccc);
-  border-radius: 1%;
-  box-shadow: 0px 0px 15px 0px rgb(49, 46, 46);
+  row-gap: 75px;
 
-  img {
-    width: 100%;
-    border-radius: 1%;
-  }
-
-  span {
-    text-align: center;
-    font-family: "Lyon", Georgia;
+  div {
+    &:first-child {
+      @include pro-card;
+    }
 
     &:nth-child(2) {
-      text-decoration: underline;
-      font-weight: 600;
+      @include pro-card;
     }
 
     &:last-child {
-      margin-bottom: 5px;
+      @include pro-card;
     }
   }
+}
+
+.hero__associates {
+  @extend .hero__partners;
 }

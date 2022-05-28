@@ -129,7 +129,6 @@
   }
 
   /* MAIN FIRST SECTION */
-
   .hero {
     display: block;
   }
@@ -286,7 +285,6 @@
   }
 
   /* MAIN PROFESIONALES */
-
   .hero__lawyers {
     h1 {
       font-size: 2.2rem;
@@ -294,7 +292,6 @@
   }
 
   /* MAIN AREAS */
-
   .hero__areas {
     h1 {
       font-size: 2.2rem;
@@ -385,7 +382,6 @@
   }
 
   /* MAIN AREAS ADMINISTRATIVO*/
-
   .hero__adm {
     img {
       @include areas-img;
@@ -409,7 +405,6 @@
   }
 
   /* MAIN AREAS CONTRATOS*/
-
   .hero__con {
     img {
       @include areas-img;
@@ -425,7 +420,6 @@
   }
 
   /* MAIN AREAS FAMILIA*/
-
   .hero__fam {
     img {
       @include areas-img;
@@ -441,7 +435,6 @@
   }
 
   /* MAIN AREAS LABORAL*/
-
   .hero__lab {
     img {
       @include areas-img;
@@ -457,7 +450,6 @@
   }
 
   /* MAIN AREAS PENAL*/
-
   .hero__pen {
     img {
       @include areas-img;
@@ -473,7 +465,6 @@
   }
 
   /* MAIN AREAS TRIBUTARIO*/
-
   .hero__tri {
     img {
       @include areas-img;
@@ -489,7 +480,6 @@
   }
 
   /* MAIN CARRERA */
-
   .hero__career {
     display: flex;
 

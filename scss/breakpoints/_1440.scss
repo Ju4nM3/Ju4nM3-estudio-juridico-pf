@@ -1,8 +1,6 @@
 @media (min-width: 1440px) {
   /* MAIN */
-
   /* SECOND SECTION */
-
   .hero__ss-article-container {
     @include flex-center-center;
     flex-direction: row;
@@ -38,7 +36,6 @@
   }
 
   /* MAIN AREAS ADMINISTRATIVO*/
-
   .hero__adm {
     img {
       @include areas-img;
@@ -62,7 +59,6 @@
   }
 
   /* MAIN AREAS CONTRATOS*/
-
   .hero__con {
     img {
       @include areas-img;
@@ -78,7 +74,6 @@
   }
 
   /* MAIN AREAS FAMILIA*/
-
   .hero__fam {
     img {
       @include areas-img;
@@ -94,7 +89,6 @@
   }
 
   /* MAIN AREAS LABORAL*/
-
   .hero__lab {
     img {
       @include areas-img;
@@ -110,7 +104,6 @@
   }
 
   /* MAIN AREAS PENAL*/
-
   .hero__pen {
     img {
       @include areas-img;
@@ -126,7 +119,6 @@
   }
 
   /* MAIN AREAS TRIBUTARIO*/
-
   .hero__tri {
     img {
       @include areas-img;

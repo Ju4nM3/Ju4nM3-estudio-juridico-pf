@@ -822,6 +822,8 @@ footer {
   font-weight: 600;
   background: #fff;
   transition: 0.25s;
+  border: 2px solid #000;
+  border-radius: 3px;
 }
 .hero__areas-back:link {
   color: #444;
@@ -1243,8 +1245,6 @@ footer {
   .hero__contact h1 {
     font-size: 1.7rem;
   }
-
-  /* MAIN FOOTER */
 }
 /* DISEÑO 1024PX */
 @media (min-width: 1024px) {
@@ -1849,7 +1849,6 @@ footer {
   .footer__socialMedia-icons i {
     border: 2px solid #ddd;
     padding: 10px;
-    border-radius: 100%;
   }
   .footer__socialMedia-icons i:hover {
     color: #777;

@@ -170,6 +170,9 @@
 
   transition: 0.25s;
 
+  border: 2px solid #000;
+  border-radius: 3px;
+
   &:link {
     color: $color4;
   }

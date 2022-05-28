@@ -1826,6 +1826,34 @@ footer {
     grid-template-areas: "indice logo  contacto" "indice redes  direccion" "copyright copyright copyright";
   }
 
+  .footer__nav {
+    position: relative;
+    top: 0;
+    display: initial;
+    grid-area: indice;
+    justify-self: center;
+    margin-top: 10px;
+  }
+
+  .footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .footer__nav-list li {
+    position: relative;
+    top: 0;
+  }
+  .footer__nav-list li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  .footer__nav-list li a:hover {
+    color: #777;
+  }
+
   .footer__logo {
     grid-area: logo;
     justify-self: center;
@@ -1860,32 +1888,6 @@ footer {
   .footer__socialMedia-icons i:hover {
     color: #777;
     border-color: #777;
-  }
-
-  .footer__nav {
-    display: initial;
-    grid-area: indice;
-    justify-self: center;
-    margin-top: 10px;
-  }
-
-  .footer__nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-  .footer__nav-list li {
-    position: relative;
-    top: 0;
-  }
-  .footer__nav-list li a {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.8rem;
-    color: #fff;
-  }
-  .footer__nav-list li a:hover {
-    color: #777;
   }
 
   .footer__contact {
